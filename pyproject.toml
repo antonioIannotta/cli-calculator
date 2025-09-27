@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "calculator-cli"
+version = "0.1.0"
+description = "A simple command-line calculator."
+authors = [{name="Your Name", email="your@email.com"}]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+dependencies = ["typer"]
+
+[project.scripts]
+calc = "calculator.cli:app"
